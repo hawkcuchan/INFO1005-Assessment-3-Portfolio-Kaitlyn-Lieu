@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Bootstrap required tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--Links to favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple.png" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="/imgs/faviconlrg.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/imgs/faviconmed.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!--Links Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAV BAR START SOURCE:https://getbootstrap.com/docs/4.0/components/navs/-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="imgs/logo.png"
+              height="40"
+              alt="logo"
+              class="rounded-circle"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ms-auto gap-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr class="solid" />
+      <!--NAVBAR END-->
+    </header>
+    <!--WRAPPER for all elements-->
+    <div class="container d-flex align-items-stretch mb-5">
+      <!--SIDEBAR START-->
+      <div class="p-3 h-100" style="max-width: 360px">
+        <div class="contact-card p-3 mb-3">
+          <p class="contact-card-label">Get in touch</p>
+          <div class="contact-row">
+            <div class="contact-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <p class="contact-type">email</p>
+              <p class="contact-info">lieukaitlyn@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">
+              <a
+                href="https://www.linkedin.com/in/kaitlynmialieu/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div>
+              <p class="contact-type">LinkedIn</p>
+              <p class="contact-info">linkedin.com/in/kaitlynmialieu/</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">
+              <a href="https://github.com/hawkcuchan" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div>
+              <p class="contact-type">Github</p>
+              <p class="contact-info">github.com/kaitlynlieu</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div>
+              <p class="contact-type">Phone</p>
+              <p class="contact-info">Available on request</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="availability-card p-3 mb-3">
+          <p class="availability-label">Availability</p>
+          <p class="availability-info">Monday-Tuesday: 9am-5pm</p>
+          <p class="availability-info">Responds within 24 hours</p>
+          <a href="resume/resume.pdf" target="_blank">
+            <button class="btn btn-primary">Download Resume</button>
+          </a>
+        </div>
+      </div>
+      <!--SIDEBAR END-->
+      <!--CONTACT FORM START-->
+      <div class="contact-form-area h-100 p-3">
+        <h1 class="mb-2">Let's talk</h1>
+        <p class="subtitle mb-4">
+          Have a project idea, internship offer, or just want to connect? Fill
+          in the form and I'll get back to you.
+        </p>
+        <div class="row g-3 mb-3">
+          <div class="col-6">
+            <label class="form-label">First name</label>
+            <input type="text" class="form-control" placeholder="John" />
+          </div>
+          <div class="col-6">
+            <label class="form-label">Last name</label>
+            <input type="text" class="form-control" placeholder="Doe" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="johndoe@email.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Subject</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Internship opportunity / Collaboration / Other"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Tell me what you have in mind"
+          ></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary">send message →</button>
+        </div>
+      </div>
+      <!--CONTACT FORM END-->
+    </div>
+    <footer>
+      <hr class="solid" />
+      <div class="container footer align-items-center mb-4">
+        <div class="footer-banner">
+          <blockquote class="blockquote text-center">
+            Built and designed by Kaitlyn Lieu
+          </blockquote>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

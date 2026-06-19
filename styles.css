@@ -1,0 +1,304 @@
+:root {
+  --bs-dark-blue: #0F172A;
+  --bs-darkgray-blue:#1E2A3A;
+  --bs-electric-blue: #2563EB;
+  --bs-light-blue: #60A5FA;
+  --bs-icy-blue: #EAF4FF;
+  --bs-pink: #F6D6E6;
+  --bs-white: #FFFFFF
+
+}
+.p{
+  background-color: var(--bs-dark-blue);
+  color: var(--bs-icy-blue);
+  font-family: 'Roboto', sans-serif; 
+}
+body{
+    background-color: var(--bs-dark-blue);
+    color: var(--bs-icy-blue);
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{ 
+  color:var(--bs-white);
+  font-family: 'Bebas Neue', sans-serif;
+  padding-left: 5px;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* NAV BAR CSS */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+.navbar {
+  background: var(--bs-dark-blue);  
+  color: var(--bs-icy-blue);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 2rem;
+  height: 64px;
+  align-items: center;
+  --bs-navbar-active-color: var(--bs-icy-blue);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--bs-dark-blue);
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #2A2F45;
+  }
+
+  .navbar {
+    position: relative;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23EAF4FF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.nav-link {
+  color: var(--bs-icy-blue);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  transition: color var(--transition), background var(--transition);
+}
+/*HOME PAGE CSS */
+.hero-section{ min-height: calc(100vh - 56px);}
+.home-heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bs-light-blue);
+  font-weight: 600;
+}
+.hightlight{
+  color:var(--bs-dark-blue)
+}
+
+/* HEAD ANIMATION START - https://freefrontend.com/css-text-glitch-effects/ */
+.glitch {
+  position: relative;
+  color: white;
+  mix-blend-mode: lighten;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: var(--bs-dark-blue);
+  clip: rect(0, 0, 0, 0);
+  white-space: pre;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.glitch::before {
+  left: -1px;
+  text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
+  animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+}
+
+.glitch::after {
+  left: 1px;
+  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+  animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes glitch-loop-1 {
+  0%   { clip: rect(36px, 9999px, 9px,   0); }
+  25%  { clip: rect(25px, 9999px, 99px,  0); }
+  50%  { clip: rect(50px, 9999px, 102px, 0); }
+  75%  { clip: rect(30px, 9999px, 92px,  0); }
+  100% { clip: rect(91px, 9999px, 98px,  0); }
+}
+
+@keyframes glitch-loop-2 {
+  0%   { top: -1px; left:  1px; clip: rect(65px, 9999px, 119px, 0); }
+  25%  { top: -6px; left:  4px; clip: rect(79px, 9999px,  19px, 0); }
+  50%  { top: -3px; left:  2px; clip: rect(68px, 9999px,  11px, 0); }
+  75%  { top:  0px; left: -4px; clip: rect(95px, 9999px,  53px, 0); }
+  100% { top: -1px; left: -1px; clip: rect(31px, 9999px, 149px, 0); }
+}
+
+/* HEAD ANIMATION END */
+.tools h2{
+  color: var(--bs-dark-blue);
+}
+.tools{ background-color:var(--bs-icy-blue); color:var(--bs-dark-blue);}
+.tool-tag{
+  background-color: var(--bs-white);
+  border: 1px solid rgba(37,99,235,0.15);
+  border-radius: 0.75rem;
+  
+}
+.footer{
+  background-color:var(--bs-dark-blue);
+  color: var(--bs-white);
+}
+/* CSS for navigation bar */
+/*.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background:#0F172A;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.navbar a{
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: color var(--transition), background var(--transition);
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #EAF4FF;
+  background: #60A5FA1A;
+}
+.navbar a.active{
+  color:#EAF4FF;
+  background: #60A5FA1A;
+} */
+
+.tools-tag{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.solid{
+  width: 100%;
+  border: 4px;
+  border-top: 1px solid rgba(96, 165, 250, 0.15);
+  margin: 1rem 0;
+}
+.body{
+  background: #0F172A;
+}
+.contact-item-dot img {
+  width: 18px;
+  height: 18px;
+}
+/*PROJECTS CSS START */
+.project-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-dark {
+  background-color:var(--bs-dark-blue);
+  color:var(--bs-white);
+}
+.card-body{
+  background-color:#1e2a3a;
+  color:var(--bs-white);
+  flex: 1;
+}
+.badge-tag{
+  background-color:var(--bs-electric-blue)
+}
+.project-card {
+  background-color:#1e2a3a;
+  flex: 1;
+}
+.card{
+  background-color: #1e2a3a;
+}
+/*ABOUT ME CSS START */
+.about-avatar {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: var(--electric);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 2.5rem;
+  color: var(--white);
+  border: 3px solid rgba(96,165,250,0.3);
+}
+.timeline-item{
+  border-left: 3px solid var(--bs-electric-blue);
+  background-color:var(--bs-darkgray-blue);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; 
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+/*CONTACT CSS START */
+.contact-card {
+  background-color: var(--bs-gray-blue);
+  border: 1px solid #2A2F45;
+  border-radius: 10px;
+}
+
+.contact-icon {
+  border-radius: 50%;
+  background-color: #2A2F45;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #2A2F45;
+  padding: 12px;
+}
+
+.contact-row:first-child {
+  padding-top: 0;
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-type {
+  font-size: 13px;
+  color: var(--bs-icy-blue);
+  margin: 0;
+}
+
+.contact-info {
+  font-size: 13px;
+  color: var(--bs-electric-blue);
+  margin: 0;
+}
+
+.availability-card {
+  background-color: var(--bs-gray-blue);
+  border: 1px solid #2A2F45;
+  border-radius: 10px;
+}

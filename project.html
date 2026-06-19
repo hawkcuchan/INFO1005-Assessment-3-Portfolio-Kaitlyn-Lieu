@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Bootstrap required tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--Links to favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple.png" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="/imgs/faviconlrg.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/imgs/faviconmed.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!--Links Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projects</title>
+  </head>
+
+  <body>
+    <!-- NAV BAR START SOURCE:https://getbootstrap.com/docs/4.0/components/navs/-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="imgs/logo.png"
+            height="40"
+            alt="logo"
+            class="rounded-circle"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="solid" />
+
+    <header>
+      <!--Introduction to Projects-->
+      <section class="pinned-project">
+        <div class="container py-5">
+          <h2 class="mb-2">Projects</h2>
+          <p class="mb-4">
+            Portfolio of work from group assignments, self-initiated projects
+            and coursework.
+          </p>
+
+          <!--Pinned card project-->
+          <div
+            class="card card-dark mb-4 overflow-hidden"
+            data-category="group"
+            style="display: block"
+          >
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="imgs/prototype.png"
+                  alt="Pinned"
+                  class="img-fluid rounded"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <div
+                  class="card-body p-4 d-flex flex-column justify-content-center h-100"
+                >
+                  <span class="project-tag"> 📌 pinned - project </span>
+                  <h2 class="card-title mb-2">Resume/Portfolio Webpage</h2>
+                  <p class="mb-2">
+                    Developed a Portfolio webpage from scratch using HTML and
+                    utilised software Bootstrap for CSS.
+                  </p>
+                  <div class="card-badges">
+                    <span class="badge badge-tag rounded-pill me-1">HTML</span>
+                    <span class="badge badge-tag rounded-pill me-1">CSS</span>
+                    <span class="badge badge-tag rounded-pill me-1"
+                      >Bootstrap</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- SCROLL FEATURE START -->
+    <div class="container py-6">
+      <blockquote class="blockquote text-center">
+        Scroll to explore more of my projects
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+          />
+        </svg>
+      </blockquote>
+    </div>
+    <!-- SCROLL FEATURE END -->
+
+    <!--PROJECT CARDS FOR EACH PROJECT-->
+    <section class="project-card-grid">
+      <div class="container py-5">
+        <div class="row g-2 project-grid">
+          <!--PROJECT CARD FOR AI MARKETING START-->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="project-card">
+                <img
+                  src="imgs/marketing.png"
+                  alt="AI"
+                  class="img-fluid rounded"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">AI-Marketing</h3>
+                  <p class="card-text small">
+                    Created an AI prompted Marketing Advertisement
+                  </p>
+                  <div class="card-badges">
+                    <span class="badge badge-tag rounded-pill me-1">AI</span>
+                    <span class="badge badge-tag rounded-pill me-1">Figma</span>
+                    <span class="badge badge-tag rounded-pill me-1">Adobe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--PROJECT CARD FOR AI MARKETING END-->
+
+          <!--HABIT TRACKER PROJECT CARD START-->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="project-card">
+                <img src="imgs/habit.png" alt="AI" class="img-fluid rounded" />
+                <div class="card-body">
+                  <h3 class="card-title">Habit tracker</h3>
+                  <p class="card-text small">
+                    Self-built Webpage to track habits and currently developing
+                    an app
+                  </p>
+                  <div class="card-badges">
+                    <span class="badge badge-tag rounded-pill me-1">HTML</span>
+                    <span class="badge badge-tag rounded-pill me-1">CSS</span>
+                    <span class="badge badge-tag rounded-pill me-1"
+                      >Bootstrap</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--HABIT TRACKER PROJECT CARD END-->
+
+          <!--SQL FOR DELIVERY APP START-->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="project-card">
+                <img src="imgs/sql.png" alt="AI" class="img-fluid rounded" />
+                <div class="card-body">
+                  <h3 class="card-title">SQL for Delivery App</h3>
+                  <p class="card-text small">
+                    Created an AI prompted Marketing Advertisement
+                  </p>
+                  <div class="card-badges">
+                    <span class="badge badge-tag rounded-pill me-1">SQL</span>
+                    <span class="badge badge-tag rounded-pill me-1">Java</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SQL FOR DELIVERY APP END-->
+
+          <!--TERMINATOR WEBSITE FIXES START-->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="project-card">
+                <img
+                  src="imgs/terminator.png"
+                  alt="AI"
+                  class="img-fluid rounded"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Terminator Website Fixes</h3>
+                  <p class="card-text small">
+                    Created an AI prompted Marketing Advertisement
+                  </p>
+                  <div class="card-badges">
+                    <span class="badge badge-tag rounded-pill me-1">HTML</span>
+                    <span class="badge badge-tag rounded-pill me-1">CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--TERMINATOR WEBSITE FIXES END-->
+    </section>
+    <footer>
+      <hr class="solid" />
+      <div class="container footer align-items-center mb-4">
+        <div class="footer-banner">
+          <blockquote class="blockquote text-center">
+            Built and designed by Kaitlyn Lieu
+          </blockquote>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
